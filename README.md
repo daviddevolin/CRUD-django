@@ -27,5 +27,30 @@ Se você não tiver o pip instalado, você pode instalar usando o seguinte coman
 python -m ensurepip --default-pip
 ```
 
+## Passo 3: Instale o Django
+
+### 3.1 Use o seguinte comando para instalar a versão mais recente do Django:
+
+```
+pip install Django
+```
+Se você deseja instalar uma versão específica do Django, use o seguinte comando:
+```
+pip install Django==<versão>
+```
+
+Substitua `<versão>` pela versão específica que deseja instalar.
+
+## Passo 4: Verifique se o Django foi instalado corretamente
+
+### 4.1 digite o seguinte comando no terminal:
+```
+django-admin --version
+```
+
+
+Se o Django foi instalado corretamente, você deve ver a versão do Django instalada.
+
+
 
 
