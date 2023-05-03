@@ -8,5 +8,11 @@
 </head>
 <body>
     to aq fela da puta
+
+    <ul>
+        {% for user in users %}
+            <li>{{user.id}} - {{user.nome}}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
