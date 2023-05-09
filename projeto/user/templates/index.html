@@ -13,5 +13,14 @@
             <li>{{user.id}} - {{user.nome}}</li>
         {% endfor %}
     </ul>
+
+    <!-- redirecionando submit para a url -->
+    <form action="{%url 'salvar' %}" method="POST">
+        <!--token de certificação para indentificar  que o submit é seguro-->
+        {% csrf_token %}
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome">
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
